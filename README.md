@@ -1,1 +1,22 @@
 # ATS-NIA
+Node Injection Attacks on Graph Neural Networks via Adaptive Target Selection
+
+
+This repository is our Pytorch implementation of our paper:
+Node Injection Attacks on Graph Neural Networks via Adaptive Target Selection
+
+
+# Requirements
+matplotlib==3.7.1
+numpy==1.26.4
+pandas==1.5.1
+scikit_learn==1.1.2
+scipy==1.13.0
+torch==1.12.1+cu113
+torch_geometric==2.5.3
+torch_sparse==0.6.14
+tqdm==4.64.1
+
+# RUN CODE
+## please simple run the following
+python main.py --dataset citeseer --surrogate_model GCN --victim_model GCN --update 3 --alpha 0.6 --ratio 0.03 
